@@ -98,8 +98,8 @@ body{
 	#about{
 		.container{
 			display:grid;
-			width:1440px;
 			margin: auto;
+			width:1440px;
 			grid-template-columns: 40% 40%;
 			#taca{
 				margin-top:-27rem;
@@ -123,5 +123,39 @@ body{
 	#products{
 		background-color:#E4E4E4;
 		color:#333;
+		
+		.container{
+			margin: auto;
+			width:1440px;
+			padding: 1rem 9rem;
+			
+			
+			.category_products{
+				display: grid;
+				grid-template-columns: 25% 25% 25% 25%;
+				
+				figure{
+					margin: 1rem 1.5rem;
+					
+					figcaption{
+						background-color: $gold;
+						padding: 1rem;
+						text-transform: uppercase;
+						font-size:130%;
+						text-decoration: none;
+						color:#000;
+						text-align: center;
+						
+						a{
+							color:#000;
+						}
+					}
+				}
+			}
+			
+			
+		}
+		
+		
 	}
 }
