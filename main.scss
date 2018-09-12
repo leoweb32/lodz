@@ -1,5 +1,50 @@
 /* Scss Document */
-
 body{
 	background-color:#000;
+	color:#FFF;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+
+$gold:#C4A674;	
+	
+	header{
+		.container{		
+			display:grid;
+			grid-template-columns: 15% 80% 5%;
+			
+			
+			#main_menu{
+				ul{
+					margin:0;
+				li{
+					list-style:none;
+					float:left;
+					margin-left: 1.6rem;
+				
+					a{
+						color:#fff;
+						text-decoration: none;
+						
+						
+					}	
+					a:hover{
+						color:$gold;	
+						text-decoration: underline;
+						
+						u{
+							border-bottom: 5px solid $gold;
+						}
+						
+					}
+					
+					}	
+				}
+			}
+			
+		}
+	}
+
+	#products{
+		background-color:#E4E4E4;
+		color:#333;
+	}
 }
