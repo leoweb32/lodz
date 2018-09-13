@@ -155,6 +155,11 @@ body{
 			display: grid;
 			padding: 2rem 15rem;
 			grid-template-columns: 50% 50%;
+			
+			.picture{
+				position:relative;
+				margin-top: -8rem;
+			}
 		}
 		
 	}

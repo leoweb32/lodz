@@ -101,6 +101,9 @@ body {
     display: grid;
     padding: 2rem 15rem;
     grid-template-columns: 50% 50%; }
+    body #wherebuy .container .picture {
+      position: relative;
+      margin-top: -8rem; }
   body #products {
     background-color: #E4E4E4;
     color: #333; }
