@@ -33,6 +33,9 @@ body {
     width: 100%;
     min-height: 25rem;
     background-position: bottom; }
+    @media (max-width: 800px) {
+      body #diagonal1 {
+        display: none; } }
   body #diagonal2 {
     position: relative;
     margin-top: -24rem;
@@ -43,6 +46,9 @@ body {
     width: 100%;
     min-height: 25rem;
     background-position: bottom; }
+    @media (max-width: 800px) {
+      body #diagonal2 {
+        display: none; } }
   body #diagonal3 {
     position: relative;
     margin-top: -24rem;
@@ -53,6 +59,9 @@ body {
     width: 100%;
     min-height: 25rem;
     background-position: bottom; }
+    @media (max-width: 800px) {
+      body #diagonal3 {
+        display: none; } }
   body a {
     text-decoration: none; }
   body h2 {
@@ -71,9 +80,9 @@ body {
     border-bottom: 5px solid #C4A674; }
     body header .container {
       grid-template-columns: 23% 72% 5%; }
-      @media (max-width: 1200px) {
+      @media (max-width: 800px) {
         body header .container {
-          grid-template-columns: 50% 50%; } }
+          grid-template-columns: 45% 50% 5%; } }
       body header .container #brand {
         overflow: hidden;
         padding: 1rem; }
@@ -81,6 +90,9 @@ body {
           width: 90%;
           height: auto;
           margin: auto; }
+          @media (max-width: 800px) {
+            body header .container #brand img {
+              width: 70%; } }
         body header .container #brand h1 {
           margin-left: -2000px; }
       body header .container #main_menu ul {
@@ -106,19 +118,25 @@ body {
       body header .container #language {
         padding: 3rem;
         margin: 0 auto; }
+        @media (max-width: 800px) {
+          body header .container #language {
+            width: 90%; } }
   body #slideshow {
     z-index: 1; }
   body #about .container {
     grid-template-columns: 50% 40%;
     padding: 3rem 0 5rem;
     margin-top: -3rem; }
-    @media (max-width: 1200px) {
+    @media (max-width: 800px) {
       body #about .container {
-        grid-template-columns: 50% 50%; } }
+        grid-template-columns: 100%; } }
     body #about .container #taca {
       margin-top: -17rem;
       position: relative;
       z-index: 300000000000; }
+      @media (max-width: 800px) {
+        body #about .container #taca {
+          display: none; } }
       body #about .container #taca img {
         width: 95%; }
     body #about .container .calltoaction {
@@ -151,6 +169,8 @@ body {
           body #products .container .category_products {
             width: 100%;
             grid-template-columns: 50% 50%; } }
+        body #products .container .category_products .container {
+          padding: 0; }
         body #products .container .category_products figure {
           margin: 1rem 1.5rem; }
           body #products .container .category_products figure figcaption {
