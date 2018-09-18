@@ -20,7 +20,10 @@
       <h1>Lodz Critais poloneses</h1>
     </div>
     <div id="main_menu">
-     <?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
+    <?php wp_nav_menu( array(
+		'theme_location' => 'top',
+		'menu_id'        => 'top-menu',
+	) ); ?>
     </div>
     <div id="language"><img src="<?php echo get_template_directory_uri()?>/assets/images/flag_eua.jpg"></div>
   </div>

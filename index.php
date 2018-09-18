@@ -1,10 +1,8 @@
-<?php
-get_header();
-?>
+<?php get_header(); ?>
 
 
 <!--slideshow-->
-<section id="slideshow"><img src="<?php echo get_template_directory_uri()?>/assets/images/slide.jpg" width="100%" height="auto">
+<section id="slideshow"><?php echo do_shortcode('[rev_slider alias="home"]'); ?>
 </section>
 
 <!--About-->
