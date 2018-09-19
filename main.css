@@ -1,23 +1,35 @@
 /* Scss Document */
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #fff; }
+  color: #fff;
+  font-family: "futura-pt", "sans-serif";
+  font-weight: 100; }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: fff; }
+  color: fff;
+  font-family: "futura-pt", "sans-serif";
+  font-weight: 100; }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: fff; }
+  color: fff;
+  font-family: "futura-pt", "sans-serif";
+  font-weight: 100; }
+
+textarea {
+  font-family: "futura-pt", "sans-serif";
+  font-weight: 100;
+  padding-right: 1rem; }
 
 body {
   background-color: #000;
   color: #FFF;
-  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+  font-family: "futura-pt", "sans-serif";
+  font-size: 110%;
   font-weight: lighter; }
   body .migalha {
-    font-size: 80%; }
+    font-size: 90%; }
     body .migalha a {
       color: #C4A674; }
   body .container {
@@ -42,17 +54,14 @@ body {
         display: none; } }
   body #diagonal2 {
     position: relative;
-    margin-top: -24rem;
+    margin-top: -13rem;
     background-image: url(assets/images/divisao2.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
     z-index: 5000000000;
     width: 100%;
-    min-height: 25rem;
+    min-height: 14rem;
     background-position: bottom; }
-    @media (max-width: 800px) {
-      body #diagonal2 {
-        display: none; } }
   body #diagonal3 {
     position: relative;
     margin-top: -24rem;
@@ -266,13 +275,27 @@ body {
 #geral_archive {
   margin-top: -10rem;
   position: relative; }
+  #geral_archive .migalha {
+    /* float: right; */
+    text-align: right;
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 4rem;
+    margin-top: -4rem;
+    z-index: 40000000000000000;
+    position: relative; }
+  #geral_archive .container-top {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto; }
+    #geral_archive .container-top h2 {
+      float: left; }
+    #geral_archive .container-top .descri {
+      float: right;
+      text-align: right; }
   #geral_archive #diagonal1 {
     margin-top: -25rem; }
-  #geral_archive h2 {
-    float: left; }
-  #geral_archive .descri {
-    float: right;
-    text-align: right; }
   #geral_archive #archive_products {
     width: 100%;
     background-color: #000; }

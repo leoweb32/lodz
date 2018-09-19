@@ -4,23 +4,35 @@ $gold:#C4A674;
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #fff;
+	font-family: "futura-pt", "sans-serif";
+	font-weight: 100;
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: fff;
+	font-family: "futura-pt", "sans-serif";
+	font-weight: 100;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: fff;
+	font-family: "futura-pt", "sans-serif";
+	font-weight: 100;
+}
+textarea{
+	font-family: "futura-pt", "sans-serif";
+	font-weight: 100;
+	padding-right: 1rem;
 }
 
 body{
 	background-color:#000;
 	color:#FFF;
-	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-family: "futura-pt", "sans-serif";
+	font-size:110%;
 	font-weight: lighter;
 	.migalha{
-		font-size:80%;
+		font-size:90%;
 		a{
 		color:$gold;
 	}
@@ -53,18 +65,16 @@ body{
 	
 	#diagonal2{
 		position: relative;
-		margin-top: -24rem;
+		margin-top: -13rem;
 		background-image: url(assets/images/divisao2.png);
 		background-repeat: no-repeat;
 		background-size: 100% auto;
 		z-index: 5000000000;
 		width: 100%;
-		min-height: 25rem;
-        background-position: bottom;
-			@media(max-width: 800px) {
-				display: none
+		min-height: 14rem;
+		background-position: bottom;
 }	
-	}
+	
 	
 	
 	#diagonal3{
@@ -415,17 +425,42 @@ body{
 	margin-top: -10rem;
 	position: relative;
 	
-	#diagonal1{
-		margin-top: -25rem;	
-	}
-	
-	h2{
+	.migalha{
+		
+    /* float: right; */
+    text-align: right;
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 4rem;
+    margin-top: -4rem;
+    z-index: 40000000000000000;
+    position: relative;
+
+		}
+	.container-top{
+		width:1200px;
+		display:grid;
+		grid-template-columns: 50% 50%;
+		margin: auto;
+		
+		
+		h2{
 		float:left;
 	}
 	.descri{
 		float:right;
 		text-align: right;
 	}
+	
+		
+		
+	}
+	
+	
+	#diagonal1{
+		margin-top: -25rem;	
+	}
+	
 	
 	#archive_products{
 		width:100%;

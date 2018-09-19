@@ -2,7 +2,8 @@
 
 
 <!--slideshow-->
-<section id="slideshow"><?php echo do_shortcode('[rev_slider alias="home"]'); ?>
+<section id="slideshow">
+	<?php echo do_shortcode('[rev_slider alias="home"]'); ?>
 </section>
 
 <!--About-->
@@ -14,8 +15,12 @@
 		<div id="text_about">
 			<h2>
 				<div class="small">Sobre os</div> Cristais Lodz </h2>
-<? the_excerpt(2)  ?>
-			<span class="calltoaction"><a href="#">Saiba mais sobre a Lodz</a></span> </div>
+			<?php
+			$post_ondecomprar = get_post( 2 );
+			$contents = $post_ondecomprar->post_excerpt;
+			echo $contents;
+			?>
+			<span class="calltoaction"><a href="<?php echo get_permalink()?>">Saiba mais sobre a Lodz</a></span> </div>
 	</div>
 </section>
 
@@ -24,11 +29,11 @@
 <section id="products">
 	<div class="container">
 		<h2>
-			<div class="small">linha de</div>Cristais Lodz </h2>
+			<div class="small">Linha de</div>Cristais Lodz </h2>
 		<p>Confira nossa linha de produtos completa de cristais poloneses lapidados manualmente</p>
 		<div class="category_products">
 			<div class="container slide">
-				<div class="resCarousel" data-items="2-4-4-4-4-4" >
+				<div class="resCarousel" data-items="2-4-4-4-4-4">
 					<div class="resCarousel-inner">
 
 
@@ -44,27 +49,26 @@ $posts = get_posts(array(
 if( $posts ): ?>
 						<?php foreach( $posts as $post ): setup_postdata( $post );?>
 						<a href="<?php echo get_permalink()?>">
-						<div class="item">
-							<figure>
-								<img src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php the_title()?>">
-								<figcaption>
-									<?php the_title() ?>
-								</figcaption>
-							</figure>
-						</div>
-						</a>	
+							<div class="item">
+								<figure>
+									<img src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php the_title()?>">
+									<figcaption>
+										<?php the_title() ?>
+									</figcaption>
+								</figure>
+							</div>
+						</a>
 						<?php endforeach; ?>
 
 						<?php wp_reset_postdata(); ?>
 						<?php endif; ?>
 					</div>
-					<button class='btn btn-default leftRs'>
-						<</button>
-							<button class='btn btn-default rightRs'>></button>
+					<button class='btn btn-default leftRs'><img src="<?php echo get_template_directory_uri()?>/assets/images/arrow_left.png"/></button>
+							<button class='btn btn-default rightRs'><img src="<?php echo get_template_directory_uri()?>/assets/images/arrow_right.png"></button>
 				</div>
 			</div>
 		</div>
-		<span class="calltoaction">Veja nossa linha completa</span> </div>
+		<span class="calltoaction"><a href="http://localhost/lodz/cristais/">Veja nossa linha completa</a></span> </div>
 </section>
 
 <!-- Maria pia casa -->
@@ -74,12 +78,12 @@ if( $posts ): ?>
 		<div id="picture"><img src="<?php echo get_template_directory_uri()?>/assets/images/img_side_maria_pia_casa.png">
 		</div>
 		<div id="about_maria_pia">
-			
-<?php
-$post_ondecomprar = get_post(52); 
-$contents = $post_ondecomprar->post_content;
-echo $contents;
-?>
+
+			<?php
+			$post_ondecomprar = get_post( 52 );
+			$contents = $post_ondecomprar->post_content;
+			echo apply_filters('the_content', $contents);
+			?>
 		</div>
 	</div>
 </section>
@@ -100,7 +104,7 @@ echo $contents;
 ?>
 		</div>
 		<div id="form_contact">
-<?php echo do_shortcode('[contact-form-7 id="5" title="Formulário de contato"]'); ?>
+			<?php echo do_shortcode('[contact-form-7 id="5" title="Formulário de contato"]'); ?>
 		</div>
 	</div>
 </section>

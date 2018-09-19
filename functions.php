@@ -584,3 +584,8 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+/**
+ * Add Excerpt posttyoe page
+ */
+add_post_type_support( 'page', 'excerpt' );

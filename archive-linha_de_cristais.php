@@ -4,14 +4,14 @@
 
 <div id="geral_archive">
 	<div id="diagonal1"></div>
-<div class="migalha container">
+<div class="migalha">
 						<?php if(function_exists('bcn_display'))
 				{
 					bcn_display();
 				}?>
 		</div>	
-	<div class="container">	
-	<h2><div class="small">linha de</div>Cristais Lodz </h2>
+	<div class="container-top">	
+	<h2><div class="small">Linha de</div>Cristais Lodz </h2>
 		<div class="descri">Confira nossa linha de produtos completa de<br>
 cristais poloneses lapidados manualmente</div>
 		</div>
