@@ -375,8 +375,18 @@ body {
       grid-template-columns: 100%; } }
 #main-cistais #content_cristias {
   margin-right: 5rem; }
-#main-cistais .products-itens {
+#main-cistais #products-itens {
   background-color: #000; }
-  #main-cistais .products-itens .container {
+  #main-cistais #products-itens .container {
+    width: 1200px;
+    margin: auto;
     display: grid;
-    grid-template-columns: 100%; }
+    grid-template-columns: 16.6% 16.6% 16.6% 16.6%; }
+    #main-cistais #products-itens .container figure {
+      margin: 0 1rem; }
+      #main-cistais #products-itens .container figure img {
+        width: 100%; }
+      #main-cistais #products-itens .container figure figcaption {
+        background-color: #C4A674;
+        padding: 1rem;
+        text-align: center; }
