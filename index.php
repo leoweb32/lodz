@@ -14,12 +14,7 @@
 		<div id="text_about">
 			<h2>
 				<div class="small">Sobre os</div> Cristais Lodz </h2>
-<?php
-$post_sobre_lodz = get_post(30); 
-$contents = $post_sobre_lodz ->post_content;
-echo $contents;
-?>
-
+<? the_excerpt(2)  ?>
 			<span class="calltoaction"><a href="#">Saiba mais sobre a Lodz</a></span> </div>
 	</div>
 </section>
@@ -32,25 +27,32 @@ echo $contents;
 			<div class="small">linha de</div>Cristais Lodz </h2>
 		<p>Confira nossa linha de produtos completa de cristais poloneses lapidados manualmente</p>
 		<div class="category_products">
-			<div class="container">
-				<div class="resCarousel" data-items="2-4-4-4" data-slide="2" data-interval="2000">
+			<div class="container slide">
+				<div class="resCarousel" data-items="2-4-4-4-4-4" >
 					<div class="resCarousel-inner">
 
 
 						<?php 
 $posts = get_posts(array(
     'orderby'   => 'asc',
-	'post_type'	=> 'linha_de_cristais'
+	'post_type'	=> 'linha_de_cristais',
+	'posts_per_page' => -1,
+	'orderby'=>'title',
+	'order'=>'asc'
+	
 ));
 if( $posts ): ?>
 						<?php foreach( $posts as $post ): setup_postdata( $post );?>
+						<a href="<?php echo get_permalink()?>">
 						<div class="item">
 							<figure>
+								<img src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php the_title()?>">
 								<figcaption>
 									<?php the_title() ?>
 								</figcaption>
 							</figure>
 						</div>
+						</a>	
 						<?php endforeach; ?>
 
 						<?php wp_reset_postdata(); ?>
@@ -74,7 +76,7 @@ if( $posts ): ?>
 		<div id="about_maria_pia">
 			
 <?php
-$post_ondecomprar = get_post(35); 
+$post_ondecomprar = get_post(52); 
 $contents = $post_ondecomprar->post_content;
 echo $contents;
 ?>
@@ -87,30 +89,19 @@ echo $contents;
 		<div id="data_contact">
 			<h2>
 				<div class="small">Fale</div>Conosco </h2>
-			<p>Entre em contato conosco e tire suas duvidas e peça informações sobre nossos produtos. </p>
-			<p>Preencha o formulário ao lado ou entre em contato pelos dados abaixo:</p>
-			<p>E-mail contato@ludzcristais.com.br
-				<br> Telefone 11 2222 . 44444 </p>
+			<?php 
+
+$post_content_fale_conosco = get_post(67);  
+
+$contents = $post_content_fale_conosco->post_content; 
+
+echo $contents; 
+
+?>
 		</div>
-		<form id="form_contact">
-			<ul>
-				<li>
-					<input name="nome" type="text" placeholder="Digite aqui o seu nome">
-				</li>
-				<li>
-					<input name="telefone" type="tel" placeholder="Digite aqui o seu telefone">
-				</li>
-				<li>
-					<input name="email" type="email" placeholder="Digite aqui o seu e-mail">
-				</li>
-				<li>
-					<textarea>Digite aqui a sua mensagem</textarea>
-				</li>
-				<li>
-					<input type="submit" class="enviar" title="Enviar" value="Enviar">
-				</li>
-			</ul>
-		</form>
+		<div id="form_contact">
+<?php echo do_shortcode('[contact-form-7 id="5" title="Formulário de contato"]'); ?>
+		</div>
 	</div>
 </section>
 

@@ -31,9 +31,9 @@
 }
 
 .resCarousel {
-    /*float: left;
-    overflow: hidden;*/
-    width: 64%;
+    /*float: left;*/
+    overflow: hidden;
+    width: 55%;
     position: relative;
 }
 
