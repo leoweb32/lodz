@@ -1,4 +1,8 @@
 <?php get_header(); ?>
+<div class="banner_top">
+<? $imagem_do_banner= get_field('imagem_do_banner'); ?>
+	<img src="<? echo $imagem_do_banner['url'] ?>" alt="<?php $imagem_do_banner['alt']?>"/>
+</div>
 <div id="diagonal-content"></div>
 <main id="main-cistais">
 	<div class="migalha">
@@ -7,7 +11,7 @@
 					bcn_display();
 				}?>
 	</div>
-	<div class="container">
+	<div class="container content_product">
 		<div id="content_cristias">
 			<h1>
 				<div class="small">Cristais Lods</div>

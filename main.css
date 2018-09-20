@@ -259,9 +259,31 @@ body {
           float: right;
           margin-right: 14%; }
   body footer {
-    padding: 2rem; }
+    padding: 8rem 0rem; }
+    body footer #brand_footer {
+      width: 100%; }
     body footer .container {
-      grid-template-columns: 25% 25% 25% 25%; }
+      grid-template-columns: 40% 20% 20% 30%; }
+    body footer #social ul {
+      float: right; }
+      body footer #social ul li {
+        float: left;
+        list-style: none;
+        margin: 0px; }
+        body footer #social ul li img {
+          width: 80%; }
+    body footer #left-bottom {
+      float: left; }
+      body footer #left-bottom li {
+        list-style: none; }
+        body footer #left-bottom li a {
+          color: #fff; }
+    body footer #right-bottom {
+      float: left; }
+      body footer #right-bottom li {
+        list-style: none; }
+        body footer #right-bottom li a {
+          color: #fff; }
 
 /* css archive*/
 #banner_archive {
@@ -328,11 +350,14 @@ body {
         text-decoration: none;
         color: #000;
         text-align: center;
-        margin-top: -4px; }
+        margin-top: -5px; }
         #geral_archive #archive_products figure figcaption a {
           color: #000; }
 
 /* Single cristais*/
+.banner_top img {
+  width: 100%; }
+
 #diagonal-content {
   position: relative;
   margin-top: -24rem;
@@ -347,6 +372,13 @@ body {
     #diagonal-content {
       display: none; } }
 
+#main-cistais .content_product {
+  margin: 2rem auto 4rem; }
+#main-cistais .migalha {
+  width: 980px;
+  display: block;
+  text-align: left;
+  margin: 0 auto 2rem; }
 #main-cistais h1 {
   font-size: 280%;
   font-weight: 100;
@@ -378,15 +410,16 @@ body {
 #main-cistais #products-itens {
   background-color: #000; }
   #main-cistais #products-itens .container {
-    width: 1200px;
+    width: 980px;
     margin: auto;
     display: grid;
-    grid-template-columns: 16.6% 16.6% 16.6% 16.6%; }
+    grid-template-columns: 25% 25% 25% 25%; }
     #main-cistais #products-itens .container figure {
-      margin: 0 1rem; }
+      margin: 0.5rem 0.5rem 0; }
       #main-cistais #products-itens .container figure img {
         width: 100%; }
       #main-cistais #products-itens .container figure figcaption {
         background-color: #C4A674;
         padding: 1rem;
-        text-align: center; }
+        text-align: center;
+        margin-top: -0.5rem; }
