@@ -23,6 +23,13 @@
 <script>
      
     </script> 
+<script>
+$(document).ready(function(){
+    $("#menu_mobile").click(function(){
+        $(".menu-menu-principal-container").toggle(500);
+    });
+});
+</script>
 <script src="<?php echo get_template_directory_uri()?>/assets/js/js_geral.js"></script>
 
 	<?php wp_footer(); ?>
