@@ -74,6 +74,10 @@ body{
 		width: 100%;
 		min-height: 19rem;
 		background-position: bottom;
+		
+					@media(max-width: 800px) {
+				display: none
+}
 }	
 	
 	
@@ -252,9 +256,10 @@ body{
 			margin-top: -3rem;
 			
 			
-							@media(max-width: 800px) {
-		
-			grid-template-columns: 100%;
+			@media(max-width: 800px) {
+				grid-template-columns: 100%;
+				grid-template-columns: 80%;
+				padding: 5rem 40px;
 
 			}
 			
@@ -297,7 +302,14 @@ body{
 			
 			padding: 0rem 0 21rem;
 			
+			@media(max-width: 800px) {
+				padding: 2rem 0 21rem;
+   				width: 92%;
 			
+
+			}
+			
+	
 			
 			
 			.calltoaction{
@@ -319,7 +331,7 @@ body{
 				
 		@media(max-width: 1200px) {
          width:100%;
-		grid-template-columns: 50% 50%;
+		grid-template-columns: 100%;
 			
 }
 				
@@ -368,10 +380,16 @@ body{
 			grid-template-columns: 50% 40%;
 			
 					@media(max-width: 1200px) {
-         width:100%;
-		grid-template-columns: 100%;
+						width:100%;
+						grid-template-columns: 100%;
 						padding: 0;
 }
+				@media(max-width: 800px) {
+				padding: 2rem 0 ;
+   				width: 92%;
+			
+
+			}
 			
 			a{
 				font-size:160%;
@@ -387,6 +405,8 @@ body{
 					
 					width:70%;
 					margin: auto;
+					
+					
 					
 				}
 			}
@@ -467,6 +487,12 @@ body{
 		
 		.container{
 			grid-template-columns: 30% 20% 20% 20%;
+			
+			@media(max-width: 800px) {
+				grid-template-columns: 100%;
+}
+			
+			
 			}
 		#social{
 			ul{
@@ -674,7 +700,7 @@ body{
 			#thumb_cristais{
 			background-image: url(assets/images/bg_image.gif);
 			background-size: 100% 100%;
-			padding: 1.5rem;
+			padding: 1.2rem;
 		}
 	}
 	

@@ -31,7 +31,7 @@
 		<p>Confira nossa linha de produtos completa de cristais poloneses lapidados manualmente</p>
 		<div class="category_products">
 			<div class="container slide">
-				<div class="resCarousel" data-items="1-2-4">
+				<div class="resCarousel" data-items="1-2-3-4">
 					<div class="resCarousel-inner">
 
 
