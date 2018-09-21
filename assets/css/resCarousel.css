@@ -10,30 +10,35 @@
     top: 0;
     bottom: 0;
     z-index: 100;
-    left: 0;
+    left: -13px;
     width: 50px;
     height: 50px;
-    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);
-    border-radius: 999px;
+	background: transparent;
+    border: none;
+   
 }
 
 .rightRs {
     position: absolute;
     margin: auto;
     top: 0;
-    right: 0;
+    right: -13px;;
     bottom: 0;
     z-index: 100;
     width: 50px;
     height: 50px;
-    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);
-    border-radius: 999px;
+	background: transparent;
+    border: none;
+   
+   
+}
+.rightRs img, .leftRs img{
+	width:100%
 }
 
 .resCarousel {
     /*float: left;*/
     overflow: hidden;
-    width: 55%;
     position: relative;
 }
 
@@ -42,6 +47,8 @@
     white-space: nowrap;
     font-size: 0;
     vertical-align: top;
+    width: 100%;
+    margin: auto;
 }
 
 .resCarousel-inner .item {
@@ -50,6 +57,9 @@
     white-space: initial;
 }
 
+#fancybox-wrap{
+	z-index: 40000000 !important;
+}
 
 /*banner*/
 
@@ -61,8 +71,6 @@
 /*tile css*/
 
 .resCarousel-inner .item .tile {
-    background: white;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     margin: 5px;
 }
 

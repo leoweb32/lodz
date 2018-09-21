@@ -31,7 +31,7 @@
 		<p>Confira nossa linha de produtos completa de cristais poloneses lapidados manualmente</p>
 		<div class="category_products">
 			<div class="container slide">
-				<div class="resCarousel" data-items="2-4-4-4-4-4">
+				<div class="resCarousel" data-items="2-4-4">
 					<div class="resCarousel-inner">
 
 
@@ -64,6 +64,7 @@ if( $posts ): ?>
 					<button class='btn btn-default leftRs'><img src="<?php echo get_template_directory_uri()?>/assets/images/arrow_left.png"/></button>
 					<button class='btn btn-default rightRs'><img src="<?php echo get_template_directory_uri()?>/assets/images/arrow_right.png"></button>
 				</div>
+					
 			</div>
 		</div>
 		<span class="calltoaction"><a href="http://localhost/lodz/cristais/">Veja nossa linha completa</a></span> </div>

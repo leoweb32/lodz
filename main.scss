@@ -52,7 +52,7 @@ body{
 		background-image: url(assets/images/divisao1.png);
 		background-repeat: no-repeat;
 		background-size: 100% auto;
-		z-index: 2000008;
+		z-index: 20000000000000;
 		width: 100%;
 		min-height: 25.1rem;
 		background-position: bottom;
@@ -65,13 +65,13 @@ body{
 	
 	#diagonal2{
 		position: relative;
-		margin-top: -13rem;
+		margin-top: -17rem;
 		background-image: url(assets/images/divisao2.png);
 		background-repeat: no-repeat;
 		background-size: 100% auto;
-		z-index:100000000;
+		z-index:20000000000000;
 		width: 100%;
-		min-height: 14rem;
+		min-height: 19rem;
 		background-position: bottom;
 }	
 	
@@ -83,7 +83,7 @@ body{
 		background-image: url(assets/images/divisao1.png);
 		background-repeat: no-repeat;
 		background-size: 100% auto;
-		z-index: 100000000;
+		z-index: 20000000000000;
 		width: 100%;
 		min-height: 25rem;
 	    background-position: bottom;
@@ -168,7 +168,7 @@ body{
 						@media (max-width:1040px){
 						position: absolute;
 						background-color:#666; 
-						z-index: 10000000000000000;
+						z-index: 2000000000000000;
 						display: none;
 						ul{
 						 padding:0 0rem;	
@@ -465,7 +465,7 @@ body{
 		
 		
 		.container{
-			grid-template-columns: 40% 20% 20% 30%;
+			grid-template-columns: 30% 20% 20% 20%;
 			}
 		#social{
 			ul{
@@ -669,15 +669,21 @@ body{
 #main-cistais{
 	
 	.content_product{
-		
 		margin: 2rem auto 4rem;
+			#thumb_cristais{
+			background-image: url(assets/images/bg_image.gif);
+			background-size: 100% 100%;
+			padding: 1.5rem;
+		}
 	}
 	
 	.migalha{
 		width:980px;
 		display: block;
 		text-align: left;
-		margin: 0 auto 2rem;
+		margin: -70px auto 5rem;
+		z-index: 1000000000000;
+		position: relative;
 	}
 	
 		h1{
@@ -722,6 +728,8 @@ body{
 		@media(max-width: 800px) {
 		margin-right: 0;
 		}	
+		
+	
 		
 	}
 	
