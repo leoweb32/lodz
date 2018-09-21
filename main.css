@@ -47,7 +47,7 @@ body {
     background-size: 100% auto;
     z-index: 2000008;
     width: 100%;
-    min-height: 25rem;
+    min-height: 25.1rem;
     background-position: bottom; }
     @media (max-width: 800px) {
       body #diagonal1 {
@@ -58,7 +58,7 @@ body {
     background-image: url(assets/images/divisao2.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
-    z-index: 5000000000;
+    z-index: 100000000;
     width: 100%;
     min-height: 14rem;
     background-position: bottom; }
@@ -68,7 +68,7 @@ body {
     background-image: url(assets/images/divisao1.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
-    z-index: 5000000000;
+    z-index: 100000000;
     width: 100%;
     min-height: 25rem;
     background-position: bottom; }
@@ -93,9 +93,12 @@ body {
     border-bottom: 5px solid #C4A674; }
     body header .container {
       grid-template-columns: 23% 72% 5%; }
+      @media (max-width: 1200px) {
+        body header .container {
+          grid-template-columns: 30% 60% 10%; } }
       @media (max-width: 800px) {
         body header .container {
-          grid-template-columns: 45% 50% 5%; } }
+          grid-template-columns: 50% 25% 15%; } }
       body header .container #brand {
         overflow: hidden;
         padding: 1rem; }
@@ -105,9 +108,44 @@ body {
           margin: auto; }
           @media (max-width: 800px) {
             body header .container #brand img {
-              width: 70%; } }
+              width: 100%;
+              padding: 0; } }
         body header .container #brand h1 {
           margin-left: -2000px; }
+      body header .container #main_menu #menu_mobile {
+        background-color: #666;
+        padding: 1.5rem 1rem;
+        border-radius: 10px;
+        color: #FFFFFF;
+        display: none;
+        border: 0;
+        margin: 1rem auto; }
+        @media (max-width: 1040px) {
+          body header .container #main_menu #menu_mobile {
+            display: block; } }
+        body header .container #main_menu #menu_mobile a {
+          color: #FFFFFF; }
+      @media (max-width: 1040px) {
+        body header .container #main_menu .menu-menu-principal-container {
+          position: absolute;
+          background-color: #666;
+          z-index: 10000000000000000;
+          display: none; }
+          body header .container #main_menu .menu-menu-principal-container ul {
+            padding: 0 0rem; }
+          body header .container #main_menu .menu-menu-principal-container li {
+            display: block;
+            width: 100%;
+            font-size: 125%;
+            padding: 2.5rem 0rem;
+            color: #ffffff;
+            margin: 0; }
+            body header .container #main_menu .menu-menu-principal-container li a {
+              color: #ffffff;
+              padding: 0; }
+            body header .container #main_menu .menu-menu-principal-container li a:hover {
+              background-color: #C4A674;
+              color: #000; } }
       body header .container #main_menu ul {
         margin: 0;
         text-align: center;
@@ -133,7 +171,7 @@ body {
         margin: 0 auto; }
         @media (max-width: 800px) {
           body header .container #language {
-            width: 90%; } }
+            padding: 3rem 1rem; } }
   body #slideshow {
     z-index: 1; }
   body #about .container {
@@ -161,7 +199,8 @@ body {
         color: #fff; }
   body #products {
     background-color: #E4E4E4;
-    color: #333; }
+    color: #333;
+    margin-top: -3px; }
     body #products .container {
       padding: 0rem 0 21rem; }
       body #products .container .calltoaction {
@@ -364,13 +403,25 @@ body {
   background-image: url(assets/images/divisao3.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
-  z-index: 5000000000;
+  z-index: 100000;
   width: 100%;
   min-height: 25rem;
   background-position: bottom; }
   @media (max-width: 800px) {
     #diagonal-content {
       display: none; } }
+
+/*--PAGES --*/
+#page .container {
+  padding: 3rem 0; }
+  #page .container #content-page {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    margin: auto; }
+    #page .container #content-page #content {
+      margin-right: 5rem; }
+    #page .container #content-page #images-page {
+      text-align: right; }
 
 #main-cistais .content_product {
   margin: 2rem auto 4rem; }
@@ -401,12 +452,16 @@ body {
   grid-template-columns: 60% 40%; }
   @media (max-width: 800px) {
     #main-cistais .container {
-      grid-template-columns: 50% 50%; } }
+      grid-template-columns: 50% 50%;
+      width: 100%; } }
   @media (max-width: 500px) {
     #main-cistais .container {
       grid-template-columns: 100%; } }
 #main-cistais #content_cristias {
   margin-right: 5rem; }
+  @media (max-width: 800px) {
+    #main-cistais #content_cristias {
+      margin-right: 0; } }
 #main-cistais #products-itens {
   background-color: #000; }
   #main-cistais #products-itens .container {
@@ -414,6 +469,18 @@ body {
     margin: auto;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%; }
+    @media (max-width: 1200px) {
+      #main-cistais #products-itens .container {
+        width: 100%;
+        grid-template-columns: 33% 33% 33%; } }
+    @media (max-width: 800px) {
+      #main-cistais #products-itens .container {
+        width: 100%;
+        grid-template-columns: 50% 50%; } }
+    @media (max-width: 600px) {
+      #main-cistais #products-itens .container {
+        width: 100%;
+        grid-template-columns: 100%; } }
     #main-cistais #products-itens .container figure {
       margin: 0.5rem 0.5rem 0; }
       #main-cistais #products-itens .container figure img {

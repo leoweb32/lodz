@@ -1,6 +1,4 @@
 <?php get_header(); ?>
-
-
 <!--slideshow-->
 <section id="slideshow">
 	<?php echo do_shortcode('[rev_slider alias="home"]'); ?>
@@ -20,7 +18,7 @@
 			$contents = $post_ondecomprar->post_excerpt;
 			echo $contents;
 			?>
-			<span class="calltoaction"><a href="<?php echo get_permalink()?>">Saiba mais sobre a Lodz</a></span> </div>
+			<span class="calltoaction"><a href="<?php echo get_permalink(2)?>">Saiba mais sobre a Lodz</a></span> </div>
 	</div>
 </section>
 
@@ -64,7 +62,7 @@ if( $posts ): ?>
 						<?php endif; ?>
 					</div>
 					<button class='btn btn-default leftRs'><img src="<?php echo get_template_directory_uri()?>/assets/images/arrow_left.png"/></button>
-							<button class='btn btn-default rightRs'><img src="<?php echo get_template_directory_uri()?>/assets/images/arrow_right.png"></button>
+					<button class='btn btn-default rightRs'><img src="<?php echo get_template_directory_uri()?>/assets/images/arrow_right.png"></button>
 				</div>
 			</div>
 		</div>
@@ -82,7 +80,7 @@ if( $posts ): ?>
 			<?php
 			$post_ondecomprar = get_post( 52 );
 			$contents = $post_ondecomprar->post_content;
-			echo apply_filters('the_content', $contents);
+			echo apply_filters( 'the_content', $contents );
 			?>
 		</div>
 	</div>
@@ -91,17 +89,12 @@ if( $posts ): ?>
 <section id="contactus">
 	<div class="container">
 		<div id="data_contact">
-			<h2>
-				<div class="small">Fale</div>Conosco </h2>
-			<?php 
-
-$post_content_fale_conosco = get_post(67);  
-
-$contents = $post_content_fale_conosco->post_content; 
-
-echo $contents; 
-
-?>
+			<h2><div class="small">Fale</div>Conosco </h2>
+					<?php 
+					$post_content_fale_conosco = get_post(67);  
+					$contents = $post_content_fale_conosco->post_content; 
+					echo $contents; 
+					?>
 		</div>
 		<div id="form_contact">
 			<?php echo do_shortcode('[contact-form-7 id="5" title="Formulário de contato"]'); ?>

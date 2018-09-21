@@ -7,8 +7,6 @@
 <link rel="stylesheet" href="https://use.typekit.net/cnp8buu.css">
 
 <link href="<?php echo get_template_directory_uri()?>/assets/css/resCarousel.css" rel="stylesheet" type="text/css">
-	
-
 <?php wp_head(); ?>	
 	
 </head>
@@ -20,6 +18,7 @@
       <h1>Lodz Critais poloneses</h1>
     </div>
     <div id="main_menu">
+<button id="menu_mobile"><a href="#">Menu</a></button> 
     <?php wp_nav_menu( array(
 		'theme_location' => 'top',
 		'menu_id'        => 'top-menu',
