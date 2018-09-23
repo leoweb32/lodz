@@ -32,13 +32,41 @@ body{
 	font-size:110%;
 	font-weight: lighter;
 	margin: 0;
+
+	
+	@media(max-width: 600px) {
+		#fancybox-content{
+			width: 100%;
+			
+			img{
+				width:100%;
+			}
+			
+		}
+
+	}
+
+	
+	
+	@media(max-width:800px) {
+	font-size:143%;
+	}
+	
+	@media(max-width:600px) {
+	font-size:100%;
+	}
 	.migalha{
 		font-size:90%;
+		
+		@media(max-width: 800px) {
+			margin-left: 2rem;			
+		}
+		
 		a{
 		color:$gold;
 	}
 		}
-.container{		
+	.container{		
 			display:grid;
 			width:1200px;
 			margin: auto;
@@ -122,6 +150,9 @@ body{
 	
 	header{
 		height: 130px;
+		@media(max-width: 800px) {
+			height:auto;
+		}
 		border-bottom: 5px solid $gold;
 		.container{		
 			grid-template-columns: 23% 72% 5%;
@@ -137,14 +168,30 @@ body{
 			#brand{
 				overflow: hidden;
 				padding: 1rem;
-				img{width:90%; height: auto; margin: auto;
-					@media(max-width: 800px) {
+				img{
+					width:90%; 
+					height: auto; 
+					margin: auto;
+					
+					@media(max-width: 800px){
+						height:70%;
+						width:auto;
+						padding: 0.5rem;
+					}
+					
+					@media(max-width: 600px){
 						width:100%;
-						padding: 0;
+						height:auto;
+						padding: 1.5rem 0 0;
 					}
 				
 				}
-				h1{margin-left: -2000px;}	
+				h1{
+					margin-left: -2000px;
+				@media(max-width: 800px) {
+					display:none;
+				}
+				}	
 				
 			}
 			
@@ -158,7 +205,8 @@ body{
 					color:#FFFFFF;
 					display: none;
 					border:0;
-					margin: 1rem auto;
+					margin: 3rem auto;
+					font-size: 80%;	
 
 					@media (max-width:1040px){
 						display:block;
@@ -172,9 +220,13 @@ body{
 					.menu-menu-principal-container{
 						@media (max-width:1040px){
 						position: absolute;
-						background-color:#666; 
+						background-color:#444; 
 						z-index: 2000000000000000;
 						display: none;
+						top: 168px;
+ 						left: 0;
+						width:100%;
+	
 						ul{
 						 padding:0 0rem;	
 						}	
@@ -239,7 +291,7 @@ body{
 				margin: 0 auto;
 				
 					@media(max-width: 800px){
-					padding: 3rem 1rem;
+					padding: 5rem 1rem 3rem;
 					}
 			}
 		}
@@ -254,6 +306,10 @@ body{
 			grid-template-columns: 50% 40%;
 			padding: 3rem 0 5rem;
 			margin-top: -3rem;
+				@media(max-width: 800px){
+					padding:0rem;
+					width:80%;
+					}
 			
 			
 			@media(max-width: 800px) {
@@ -423,16 +479,22 @@ body{
 			padding: 3rem 0;
 			
 			
-				@media(max-width: 1200px) {
-         width:100%;
-		grid-template-columns: 100%;
-						padding: 0;
-}
+		@media(max-width: 1200px) {
+        	 width:80%;
+			grid-template-columns: 100%;
+			padding: 3rem 0;
+			}
 			
 			#data_contact{
 				
 				margin-right:5rem;
 			}
+			
+			ul{
+				
+				@media(max-width: 800px) {
+					padding-left: 0;
+				}
 			
 			
 			li{
@@ -449,6 +511,9 @@ body{
 					width:80%;
 					font-size: 110%;
 					color:#fff;
+						@media(max-width: 800px) {
+						width:100%;
+						}
 
 				}
 				
@@ -461,6 +526,10 @@ body{
 					width:85%;
 					height:380px;
 					font-size: 120%;
+					
+					@media(max-width: 800px) {
+						width:100%;
+						}
 				}
 				
 				input[type="submit"]{
@@ -471,14 +540,26 @@ body{
 					float:right;
 					margin-right: 14%;
 					
+					@media(max-width: 800px) {
+						width:100%;
+						margin: auto;
+						}
+					
 				}
 			}
 		}
 	}
 	
-	
+}
 	footer{
 		padding:8rem 0rem;
+		
+		
+		@media(max-width:800px) {
+		padding:2rem 0rem;
+		}
+			
+		
 		
 		#brand_footer{
 			width:100%;
@@ -488,20 +569,36 @@ body{
 		.container{
 			grid-template-columns: 30% 20% 20% 20%;
 			
-			@media(max-width: 800px) {
+			
+			@media(max-width:800px) {
+			grid-template-columns: 20% 30% 30% 20%;
+			}
+			
+			
+			@media(max-width:600px) {
 				grid-template-columns: 100%;
-}
+				text-align: center;
+			}
 			
 			
 			}
 		#social{
 			ul{
 				float: right;
+				
+					@media(max-width: 800px) {
+						float:none;
+					}
+					@media(max-width: 600px) {
+						width:134px;
+						margin: auto;
+					}
+				
 				li{
 					float:left;
 					list-style: none;
 					margin: 0px;
-					
+				
 					img{
 						width:80%;
 					}
@@ -511,6 +608,14 @@ body{
 		
 		#left-bottom{
 			float: left;
+			@media(max-width: 800px) {
+						float:none;
+					}
+			
+			@media(max-width: 600px) {
+				padding:0;
+					}
+			
 			li{	
 				list-style: none;
 				a{
@@ -521,6 +626,12 @@ body{
 		
 		#right-bottom{
 			float: left;
+			@media(max-width: 800px) {
+						float:none;
+					}
+			@media(max-width: 600px) {
+				padding:0;
+					}
 			li{	
 				list-style: none;
 				a{
@@ -565,6 +676,10 @@ body{
 		display:grid;
 		grid-template-columns: 50% 50%;
 		margin: auto;
+		
+		@media(max-width:800px) {
+			padding: 7rem 1rem 1rem;
+		}
 		
 		
 		h2{
@@ -680,12 +795,61 @@ body{
 			grid-template-columns: 55% 45%;
 			margin: auto;
 			
+		
+			#gallery-2{
+				display:grid;
+				grid-template-columns: 25% 25% 25% 25%;
+				
+				
+				
+					@media(max-width: 1200px) {
+					
+						grid-template-columns: 50% 50%;
+			}
+				
+				
+				.gallery-item{
+					width:100%;
+					border: 5px solid #000;
+					margin: 0;
+				
+					.gallery-icon{
+						width:100%;
+					}	
+					
+					img{
+						width:100%;
+						height: auto
+					}
+				}
+			}	
+			
+			@media(max-width: 800px) {
+				grid-template-columns: 100%;
+				width:100%
+					
+
+			}
 			#content{
 				margin-right:5rem;
+				@media(max-width: 800px) {
+				width:90%;
+				padding: 0 5%;
+				
+				}
 			}	
 			
 			#images-page{
 				text-align:right;
+			@media(max-width: 800px) {
+				width:80%;
+				margin: auto;
+					
+					}
+				img{
+					width:100%;
+				}
+				
 			}
 		}	
 		
@@ -701,6 +865,12 @@ body{
 			background-image: url(assets/images/bg_image.gif);
 			background-size: 100% 100%;
 			padding: 1.2rem;
+				
+			@media(max-width: 800px) {
+			height: max-content;
+			}	
+			
+				
 		}
 	}
 	
@@ -711,6 +881,14 @@ body{
 		margin: -70px auto 5rem;
 		z-index: 1000000000000;
 		position: relative;
+		
+		@media(max-width: 800px) {
+			margin: 0px 0rem 1rem 2rem;
+			z-index:1;
+			width:89%;
+		}
+		
+		
 	}
 	
 		h1{
@@ -734,6 +912,17 @@ body{
 			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 			font-size: 130%;
 			text-transform: none;
+		
+		@media(max-width: 800px) {
+		 width:150%;
+			text-align: center;
+		}
+		
+		@media(max-width: 600px) {
+		 width:100%;
+			text-align: center;
+		}
+		
 		}
 	
 	.container{
@@ -754,6 +943,8 @@ body{
 	margin-right: 5rem;
 		@media(max-width: 800px) {
 		margin-right: 0;
+		width:80%;
+		margin: 1rem auto;
 		}	
 		
 	
