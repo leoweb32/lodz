@@ -81,7 +81,7 @@ body{
 		background-image: url(assets/images/divisao1.png);
 		background-repeat: no-repeat;
 		background-size: 100% auto;
-		z-index: 20000000000000;
+		z-index: 100;
 		width: 100%;
 		min-height: 25.1rem;
 		background-position: bottom;
@@ -94,16 +94,16 @@ body{
 	
 	#diagonal2{
 		position: relative;
-		margin-top: -17rem;
+		margin-top: -20rem;
 		background-image: url(assets/images/divisao2.png);
 		background-repeat: no-repeat;
 		background-size: 100% auto;
-		z-index:20000000000000;
+		z-index:200;
 		width: 100%;
 		min-height: 19rem;
 		background-position: bottom;
 		
-					@media(max-width: 800px) {
+					@media(max-width: 1000px) {
 				display: none
 }
 }	
@@ -125,6 +125,24 @@ body{
 }
 	}
 
+	
+	.brasao_lods {
+    width: 58px;
+    margin: auto;
+    display: table;
+    margin-bottom: -40px;
+		position:relative;
+
+}
+	
+	.brasao_lods1{
+		position:relative;
+		left: 50%;
+		margin-left: -45px;
+		width:60px;
+		z-index: 1000000000000000000000000000;
+		margin-top: 10rem;
+	}
 	
 	a{
 		text-decoration:none;
@@ -319,12 +337,24 @@ body{
 
 			}
 			
+			#text_about{
+				position: relative;
+				z-index: 800;
+			}
+			
+			
+			
 			#taca{
 				margin-top:-17rem;
 				position: relative;
-				z-index: 300000000000;
+				z-index: 150;
 				
-	@media(max-width: 800px) {
+				
+			@media(max-width: 1200px) {
+			margin-top:-9rem;
+			}
+				
+	@media(max-width: 1000px) {
 				display: none
 }	
 				
@@ -473,6 +503,7 @@ body{
 	
 	#contactus{
 		background-color: #616161;
+		border-top:4px solid $gold;
 		
 		.container{
 			grid-template-columns: 40% 50%;
@@ -938,6 +969,8 @@ body{
 			grid-template-columns: 100%;
 		}
 	}
+	
+	
 		
 	#content_cristias{
 	margin-right: 5rem;
@@ -947,7 +980,25 @@ body{
 		margin: 1rem auto;
 		}	
 		
-	
+		a{
+			color:#000;
+			font-weight: 400;
+			.calltoaction{
+				background-color: $gold;
+				padding: 1rem;
+				float: right;
+				margin: 20px 0 2rem 0;
+				
+				@media(max-width: 800px) {
+					width:100%;
+					float:none;	
+					display: block;
+					text-align: center;
+				
+				}	
+			}
+		}
+		
 		
 	}
 	

@@ -23,7 +23,9 @@
 </section>
 
 <!-- categorias de produtos-->
-<div id="diagonal2"></div>
+<div id="diagonal2">
+ <img class="brasao_lods1" src="<?php echo get_template_directory_uri()?>/assets/images/brasao_lodz_crystals.png" alt="lodz Crystals">
+</div>
 <section id="products">
 	<div class="container">
 		<h2>
@@ -86,6 +88,7 @@ if( $posts ): ?>
 		</div>
 	</div>
 </section>
+<img class="brasao_lods" src="<?php echo get_template_directory_uri()?>/assets/images/brasao_lodz_crystals.png" alt="lodz Crystals">
 <!--Fale conosco-->
 <section id="contactus">
 	<div class="container">

@@ -22,6 +22,10 @@
 				<?php the_title() ?>
 			</h1>
 			<?php the_content();?>
+			<?php $link = get_field('link_para_compra');
+			if($link){?>
+				<a href="<?php echo $link ?>" target="_blank"><span class="calltoaction">Compre aqui nossos produtos</span></a>
+			<?php } ?>
 		</div>
 
 		<div id="thumb_cristais">
